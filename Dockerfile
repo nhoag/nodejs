@@ -5,6 +5,6 @@ MAINTAINER Nathaniel Hoag, info@nathanielhoag.com
 
 RUN apt-get update && \
   apt-get install -y wget && \
-  wget -q -O - https://deb.nodesource.com/setup | sudo bash - && \
+  wget -q -O - https://deb.nodesource.com/setup_0.12 | sudo bash - && \
   apt-get install -y build-essential nodejs && \
   rm -rf /var/lib/apt/lists/*
